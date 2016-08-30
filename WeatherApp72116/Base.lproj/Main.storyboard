@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TA3-Hf-mmb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="xYg-GO-XKg">
+            <objects>
+                <viewController id="JSf-li-E1x" customClass="WeatherViewController" customModule="WeatherApp72116" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cf2-xZ-7Rj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nod-PC-EZt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6RV-YQ-7gw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="x07-cg-Az3">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JSf-li-E1x" id="qaT-EJ-R4f"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUt-am-hEc">
+                                <rect key="frame" x="25" y="145" width="555" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZb-JY-aXJ">
+                                <rect key="frame" x="25" y="289" width="555" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ief-kU-P4R">
+                                <rect key="frame" x="23" y="211" width="555" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x07-cg-Az3" firstAttribute="leading" secondItem="6RV-YQ-7gw" secondAttribute="leading" id="52J-Nc-4fK"/>
+                            <constraint firstItem="Ief-kU-P4R" firstAttribute="top" secondItem="nUt-am-hEc" secondAttribute="bottom" constant="45" id="Cuy-cO-wkw"/>
+                            <constraint firstItem="x07-cg-Az3" firstAttribute="centerX" secondItem="Ief-kU-P4R" secondAttribute="centerX" id="DRm-zy-8YX"/>
+                            <constraint firstItem="x07-cg-Az3" firstAttribute="top" secondItem="cf2-xZ-7Rj" secondAttribute="bottom" id="K50-TF-1Ku"/>
+                            <constraint firstItem="IZb-JY-aXJ" firstAttribute="centerY" secondItem="6RV-YQ-7gw" secondAttribute="centerY" id="KTO-ap-duI"/>
+                            <constraint firstItem="nUt-am-hEc" firstAttribute="leading" secondItem="IZb-JY-aXJ" secondAttribute="leading" id="RhP-Gw-1Qv"/>
+                            <constraint firstItem="nUt-am-hEc" firstAttribute="top" secondItem="x07-cg-Az3" secondAttribute="bottom" constant="37" id="XYB-Tc-YDB"/>
+                            <constraint firstItem="nUt-am-hEc" firstAttribute="leading" secondItem="6RV-YQ-7gw" secondAttribute="leadingMargin" constant="5" id="aZM-l9-VKn"/>
+                            <constraint firstItem="Ief-kU-P4R" firstAttribute="leading" secondItem="6RV-YQ-7gw" secondAttribute="leadingMargin" constant="3" id="c79-Ad-OfF"/>
+                            <constraint firstItem="nUt-am-hEc" firstAttribute="trailing" secondItem="6RV-YQ-7gw" secondAttribute="trailingMargin" id="dST-Hs-9gA"/>
+                            <constraint firstAttribute="trailing" secondItem="x07-cg-Az3" secondAttribute="trailing" id="gCN-k3-MnL"/>
+                            <constraint firstItem="nUt-am-hEc" firstAttribute="trailing" secondItem="IZb-JY-aXJ" secondAttribute="trailing" id="uX5-TB-GAK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gg6-mu-ShL"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Ief-kU-P4R" id="EU0-G3-zFa"/>
+                        <outlet property="nameLabel" destination="nUt-am-hEc" id="koq-4k-eHR"/>
+                        <outlet property="tempLabel" destination="IZb-JY-aXJ" id="HAE-TR-rij"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gw0-5D-OxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IaU-Vs-OGc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TA3-Hf-mmb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bMg-Kj-ycb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JSf-li-E1x" kind="relationship" relationship="rootViewController" id="aoT-Nf-d0K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxY-eV-Z39" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="512"/>
+        </scene>
+    </scenes>
+</document>
